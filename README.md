@@ -69,5 +69,4 @@ Before you begin, ensure you have met the following requirements:
     - Enter the stock name in the input field and click "Submit".
     - View the bar chart displaying the net profit over the years.
 
-## File Structure
 
