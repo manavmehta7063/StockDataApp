@@ -1,15 +1,21 @@
+<!-- templates/results.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stock Data Results</title>
+    <title>Stock Analysis Results</title>
+    <link rel="stylesheet" href="static/css/style.css">
 </head>
 <body>
-    <h1>Stock Data Results</h1>
-    <img src="data:image/png;base64,{{ plot_url }}" alt="Bar Chart">
-    <br>
-    <a href="{{ url_for('index') }}">Go Back</a>
+    <div class="container">
+        <h1>Net Profit Analysis</h1>
+        <div class="chart-container">
+            <img src="data:image/png;base64,{{ plot_url }}" alt="Net Profit Chart">
+        </div>
+        <form action="{{ url_for('index') }}">
+            <input type="submit" value="Back">
+        </form>
+    </div>
 </body>
 </html>
-
