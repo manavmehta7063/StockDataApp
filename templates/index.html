@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Data Viewer</title>
+</head>
+<body>
+    <h1>Enter Stock Name</h1>
+    <form action="{{ url_for('results') }}" method="post">
+        <label for="stock_name">Stock Name:</label>
+        <input type="text" id="stock_name" name="stock_name" required>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
